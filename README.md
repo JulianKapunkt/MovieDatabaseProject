@@ -1,7 +1,7 @@
 # MovieDatabaseProject
 
 ## Goals:
-
+  1. Create a website for rating and recommending movies to friends
 
 ## Used Websites:
 
