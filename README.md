@@ -21,6 +21,4 @@ Flask
 ## Used Database:
 PostgreSQL
 
-## Trello - Kanban Board
-https://trello.com/b/P1umJVDv/movie-rating-website
 
