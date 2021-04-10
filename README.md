@@ -14,3 +14,6 @@ https://web.postman.co/home
 ## Used Database:
 PostgreSQL
 
+## Trello - Kanban Board
+https://trello.com/b/P1umJVDv/movie-rating-website
+
