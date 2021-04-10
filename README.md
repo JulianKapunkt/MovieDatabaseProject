@@ -11,8 +11,8 @@ https://app.mockplus.com/
 ## API-Test:
 https://web.postman.co/home
 
-##Web-Framework:
-Python Flask
+## Web-Framework:
+Flask
 
 ## Used Database:
 PostgreSQL
