@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+       <p>The Movie has been added to list</p>
+       <p>
+           you can now <a href="{{url_for('register')}}">add new movie</a>
+           or see the list of <a href="{{url_for('render_movie_list')}}">registered movies</a>
+       </p>
+
+{% endblock %}
