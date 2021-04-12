@@ -4,8 +4,7 @@
 Create a website for rating and recommending movies to friends
 
 ## Projektmanagement
-
-https://trello.com/
+https://trello.com/b/P1umJVDv/movie-rating-website
 
 ## Used Websites:
 
@@ -20,4 +19,5 @@ Flask
 
 ## Used Database:
 PostgreSQL
+
 
