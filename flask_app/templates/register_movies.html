@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+
+{% block body %}
+        <form  method="post">
+            <input type="text"  name="moviename"  placeholder="moviename">
+            <input type="text"  name="year" placeholder="Year">
+            <input type="submit" name="register" formaction="/register" value="Register">
+        </form>
+{% endblock %}
