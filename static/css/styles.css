@@ -1,0 +1,84 @@
+#login {
+background-image: url("../images/cinema.jpg");
+}
+
+#form {
+  padding-top: 0%;
+  padding-right: 50%;
+  padding-bottom: 3%;
+  padding-left: 10%;
+}
+
+.container-fluid {
+padding: 1.5% 10%
+}
+
+.navbar-brand {
+font-family: 'Ubuntu', sans-serif;
+font-size: 1.5rem;
+line-height: 1.5;
+font-weight: 300;
+color: #FFFF
+}
+
+h1 {
+font-family: 'Montserrat', sans-serif;
+font-size: 3rem;
+line-height: 1.5;
+font-weight: 300;
+color: #FFFF
+}
+
+label{
+color: #FFFF
+}
+
+.btn-default{
+color: #303238;
+background-color: #FFFF;
+}
+
+hr {
+    border: none;
+    height: 20px;
+    background-color: #FFFF;
+}
+
+#features {
+    padding-top: 2%;
+    padding-right: 10%;
+    padding-bottom: 2%;
+    padding-left: 10%;
+}
+
+
+#testimonials {
+    padding-top: 1%;
+    padding-right: 10%;
+    padding-bottom: 0%;
+    padding-left: 12%;
+    background-color: #04456F;
+    color: #f7f7f7;
+    text-align: left;
+}
+
+.feature-box {
+    text-align: center;
+}
+
+h3 {
+        font-weight: 700;
+}
+
+p {
+    color: #8f8f8f;
+}
+
+.icon {
+    color: #04456F;
+    padding-bottom: 1rem;
+}
+
+.icon:hover {
+    color: #020e14;
+}
