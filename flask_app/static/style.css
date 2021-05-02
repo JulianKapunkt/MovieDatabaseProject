@@ -4,7 +4,7 @@ html{
 }
 
 body{
-  background: url(../resources/Signup-Background.gif) no-repeat center center fixed; /* shorthand version. Orders are : color img repeat position */
+  background: url("/Signup-Background.gif") no-repeat center center fixed; /* shorthand version. Orders are : color img repeat position */
     -webkit-background-size: cover; /* for Chrome and Safari */
     -moz-background-size: cover;    /* for mozilla */
     -o-background-size: cover;      /* for opera */
