@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+  {% import "bootstrap/wtf.html" as wtf %}
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,10 +12,10 @@
 </head>
 
 <body>
-  <div class="container-fluid"">
+  
+  <div class="container-fluid">
       <div class=" row">
-    <div class="col-4"></div>
-    <div class="col-4">
+    <div class="col-12">
       <div class="panel">
         <div class="panel-heading">
           <div class="panel-titel" style="color: snow;">
@@ -23,7 +23,8 @@
           </div>
         </div>
         <div class="panel-body">
-          <form method="POST" action="/signup">
+          <form method="POST" action="{{url_for('signup')}}">
+            {{form.csrf_token}}
             <!-- Beginn : Input Ussername-->
             <div class="form-group">
               <div class="input-group">
@@ -32,13 +33,20 @@
                     <span class="fa fa-user"></span>
                   </span>
                 </div>
-                <input class="form-control" type="text" name="username" placeholder="Username">
+                <!--<input class="form-control" type="text" name="username" placeholder="Username"> -->
+
+                  {{form.username(class_='form-control', placeholder='Username', required='true')}}
+                  {% if form.username.errors %}
+                  <p>
+                    <ul class="errors" style="color: red;">{% for error in form.username.errors %}<li>{{ error }}</li>{% endfor %}</ul>
+                  {% endif %}
+                </p>
               </div>
             </div>
             <!-- End : Input Ussername-->
             <!-- Beginn : Input Email-->
             <div class="form-group">
-              <div class="input-group">
+              <div class="input-group mb-3">
                 <div class="input-group-prepend">
                   <span class="input-group-text">
                     <span class="fa fa-envelope"></span>
@@ -56,13 +64,13 @@
                     <span class="fa fa-lock"></span>
                   </span>
                 </div>
-                <input class="form-control" type="password" placeholder="Password" style="width:80%;">
+                <input class="form-control" type="password" placeholder="Password">
               </div>
             </div>
             <!-- End : Input Password-->
             <!-- Beginn : Repeat Password-->
             <div class="form-group">
-              <div class="input-group">
+              <div class="input-group mb-3">
                 <div class="input-group-prepend">
                   <span class="input-group-text">
                     <i class="fa fa-lock"></i>
@@ -75,7 +83,7 @@
             <!-- End : Repeat Password-->
             <!-- Beginn : Signup Button-->
             <div class="form-group">
-              <input type="submit" class="btn-primary" formaction="/signup" value="Sign up"></input>
+              <input type="submit" class="btn-primary" value="Sign up"></input>
             </div>
             <!-- End : Signup Button-->
           </form>
@@ -89,7 +97,6 @@
         </div>
       </div>
     </div>
-    <div class="col-4"></div>
   </div>
   </div>
 </body>
