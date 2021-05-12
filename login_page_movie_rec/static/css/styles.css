@@ -1,0 +1,189 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+h1 {
+font-family: 'Open Sans', sans-serif;
+font-size: 3rem;
+line-height: 1.5;
+font-weight: 300;
+color: #FFFFFF;
+text-align: center;
+}
+
+h2 {
+font-family: 'Indie Flower', cursive;
+line-height: 1.5;
+font-weight: 400;
+color: #FFFFFF;
+}
+
+h3 {
+        font-weight: 700;
+}
+
+hr {
+
+    border: none;
+    height: 20px;
+    background-color: #FFFFFF;
+}
+
+.password {
+    padding-top: 2%;
+    color: #FFFFFF;
+    text-align: center;
+
+}
+
+.password:hover {
+    color: #FFFFFF;
+}
+
+
+label{
+color: #FFFFFF
+}
+
+p {
+    color: #8f8f8f;
+    font-size: 1.2rem;
+}
+
+}
+
+.btn-default{
+    color: #303238;
+    background-color: #FFFFFF;
+}
+
+
+.nav-link{
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+
+.btn-primary:hover {
+    background-color: #0E4B72;
+    border-color: #FFFFFF;
+    font-family: 'Open Sans', sans-serif;
+    color: #FFFFFF;
+}
+
+
+.btn-primary{
+    border-color: #FFFFFF;
+    background: rgba(0, 189, 149, 1);
+    font-weight: 700;
+}
+
+/*
+.container-fluid {
+padding: 1.5% 0%
+}
+*/
+.feature-box {
+    text-align: center;
+}
+
+
+
+.icon {
+    color: #00BD95;
+    padding-bottom: 1rem;
+}
+
+.nav-link{
+    font-family: 'Open Sans', sans-serif;
+    color: #FFFFFF
+}
+
+.navbar-brand {
+font-family: 'Ubuntu', sans-serif;
+font-size: 2rem;
+line-height: 1.5;
+font-weight: 300;
+color: #FFFFFF;
+}
+
+/*
+.navbar:hover{
+   background-color: rgba(0, 189, 149, 1);
+}
+*/
+.navbar{
+  padding-top: 0%;
+  padding-top: 0%;
+  padding-right: 16%;
+  padding-bottom: 0%;
+  padding-left: 16%;
+  font-size: 1.5rem;
+  background-color: rgba(0, 189, 149, 1);
+}
+
+.navbar-item{
+    font-size: 1.5rem;
+}
+
+.testimonial-image{
+    width: 30%;
+    border-radius: 50%;
+    margin: 20px;
+    border: solid white 4px;
+}
+
+#features {
+    padding-top: 2%;
+    padding-right: 10%;
+    padding-bottom: 2%;
+    padding-left: 10%;
+}
+
+#features.h1 {
+    font-weight: 700;
+}
+
+#form {
+  padding-top: 1%;
+  padding-right: 37%;
+  padding-bottom: 3%;
+  padding-left: 37%;
+}
+
+#top-section {
+background-image: url("../images/cinema.jpg");
+  min-height:100%;
+  background-size:cover;
+  box-shadow:inset 0 0 0 2000px rgba(41, 43, 44, 0.6);
+}
+
+/*
+#login:hover{
+    box-shadow:inset 0 0 0 2000px rgba(41, 43, 44, 0.4);
+}
+*/
+
+
+#testimonials {
+    padding-top: 2%;
+    padding-right: 35%;
+    padding-bottom: 0%;
+    padding-left: 35%;
+    background-color: #04456F;
+    color: #f7f7f7;
+    text-align: left;
+    background-image: url("../images/cinema2.jpg");
+    min-height:100%;
+    background-size:cover;
+    box-shadow:inset 0 0 0 2000px rgba(41, 43, 44, 0.6);
+    text-align: center;
+}
+
+/*
+#testimonials:hover {
+    box-shadow:inset 0 0 0 2000px rgba(41, 43, 44, 0.2);
+}
+*/
