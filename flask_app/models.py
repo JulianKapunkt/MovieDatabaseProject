@@ -22,6 +22,7 @@ class MovieModel(db.Model):
     #     return f"{self.name} - {self.year}"
 
 def select_data():
+    # TODO : Remove the port and password from the code
     engine= ss.create_engine("postgresql://postgres:Sani43226117@localhost:5432/movie_rating")
     connection = engine.connect()
     metadata = ss.MetaData()

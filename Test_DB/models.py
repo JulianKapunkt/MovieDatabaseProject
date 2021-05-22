@@ -1,39 +1,44 @@
-from flask_sqlalchemy import SQLAlchemy
-import sqlalchemy as ss
+#from flask_sqlalchemy import SQLAlchemy as flask_Alchemy
+import sqlalchemy
 
 
-db= SQLAlchemy()
+#db= flask_Alchemy()
 
 
 
-class MovieModel(db.Model):
-    __tablename__ = "movies"
+# class users(db.Model):
 
-    id = db.Column(db.Integer(), primary_key= True)
-    name = db.Column(db.String())
-    year = db.Column(db.Date())
+#     username = db.Column(db.Integer(), primary_key= True)
+#     name = db.Column(db.String())
+#     year = db.Column(db.Date())
 
 
-    def __init__(self,name,year):
-        self.name = name
-        self.year = year
+#     def __init__(self,name,year):
+#         self.name = name
+#         self.year = year
 
     # def __repr__(self):
     #     return f"{self.name} - {self.year}"
 
 def select_data():
-    engine= ss.create_engine("postgresql://postgres:Sani43226117@localhost:5432/movie_rating")
+    engine= sqlalchemy.create_engine("postgresql://postgres:Sani43226117@localhost:5432/Users")
     connection = engine.connect()
-    metadata = ss.MetaData()
-    movies = ss.Table('movies', metadata,
-                  ss.Column('id',ss.BIGINT, primary_key=True),
-                  ss.Column('name',ss.String),
-                  ss.Column('year',ss.String),
+    metadata = sqlalchemy.MetaData()
+    user = sqlalchemy.Table('users', metadata,
+                  sqlalchemy.Column('username',sqlalchemy.String, primary_key=True),
+                  sqlalchemy.Column('clear_password',sqlalchemy.String),
+                  sqlalchemy.Column('email',sqlalchemy.String),
                   autoload_with=engine)
-    query= ss.select(columns='*',from_obj=[movies])
+    query= sqlalchemy.select(columns='*',from_obj=[user])
+    sqlalchemy.JSON()
     result= connection.execute(query)
     resultset = result.fetchall()
+    connection.close()
 
     
     return resultset
         
+
+
+# d= select_data()
+# print (d[0][2])
