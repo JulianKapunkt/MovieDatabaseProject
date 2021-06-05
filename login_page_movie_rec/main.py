@@ -1,10 +1,19 @@
+
 from flask import Flask, render_template, request
 # from flask_wtf import FlaskForm
 # from wtforms import StringField, PasswordField, SubmitField
 # from wtforms.validators import DataRequired, Email, Length
 from flask_bootstrap import Bootstrap
+from models import select_user
+
+
+
 
 app = Flask(__name__)
+
+# Bind Databse to Application
+
+
 # app.config['SECRET_KEY'] = "Very Secret Key"
 Bootstrap(app)
 
@@ -27,7 +36,11 @@ def login():
         email = request.form.get("exampleInputEmail1")
         password = request.form.get("exampleInputPassword1")
         check = request.form.get("exampleCheck1")  # if checked, then the value is 'on' else 'null'
-        return {'email': email , 'pass' : password, 'check': check}
+
+        # verfiy the username and password with Database
+        result= select_user(email,password)
+
+        return result
     #return render_template("login.html")
 
 @app.route('/sign_up', methods = ['GET','POST'])
@@ -55,5 +68,15 @@ def recover_user():
     if request.method == 'POST':
         email = request.form.get('email')
         return email
+
+@app.route('/login_try')
+def login_successfull():
+
+    return "login successfull"
+
+
+
 if __name__ == "__main__":
     app.run(debug=True)
+
+
